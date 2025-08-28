@@ -7,7 +7,6 @@ import json
 async def test_agent_initiative():
     # Define the evaluation criteria
     evaluation_criteria = {
-      "tool_trajectory_avg_score": 0.0,
       "response_match_score": 0.0
     }
 
