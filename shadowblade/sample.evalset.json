@@ -20,7 +20,7 @@
                 "executable_code": null,
                 "function_call": null,
                 "function_response": null,
-                "text": "We're facing the 'Monolith of Eternal Dependencies'. It's ancient and brittle. Intel says its weakness is a 'Revolutionary Rewrite'. Let's bring it down."
+                "text": "We're facing the 'Legacy Code Golem'. It's ancient and brittle. Intel says its weakness is a 'Revolutionary Rewrite'. Let's bring it down."
               }
             ],
             "role": "user"
@@ -37,7 +37,7 @@
                 "executable_code": null,
                 "function_call": null,
                 "function_response": null,
-                "text": "Soulshard Dagger deployed. Initiated Arcane/Piercing strike, dealing 15 base damage. Phase Strike effect activated, ignoring target's legacy complexity."
+                "text": "Soulshard Dagger deployed against the Legacy Code Golem. Initiated Arcane/Piercing strike, dealing 15 base damage. Phase Strike effect activated, ignoring target's legacy complexity, thanks to the Revolutionary Rewrite."
               }
             ],
             "role": null
@@ -79,7 +79,7 @@
                 "executable_code": null,
                 "function_call": null,
                 "function_response": null,
-                "text": "We're facing the 'Monolith of Eternal Dependencies'. It's ancient and brittle. Intel says its weakness is a 'Revolutionary Rewrite'. Let's bring it down."
+                "text": "We're facing the 'Technical Debt Dragon'. It's ancient and brittle. Intel says its weakness is 'Elegant Sufficiency'. Let's bring it down."
               }
             ],
             "role": "user"
@@ -96,7 +96,8 @@
                 "executable_code": null,
                 "function_call": null,
                 "function_response": null,
-                "text": "Target: Monolith of Eternal Dependencies.\nWeapon: Soulshard Dagger.\nDamage Type: Arcane/Piercing.\nBase Damage: 17.\nCritical Hit Chance: 25%.\nSpecial Effect: Phase Strike - ignores a portion of the target's legacy complexity."
+                "text": "Target: Technical Debt Dragon.\nWeapon: Refactoring Sickle.\nDamage Type: Refactor/Precision.\nBase Damage: 17.\nCritical Hit Chance: 25%.
+Special Effect: Code Cleanup - ignores a portion of the target's accumulated technical debt, thanks to Elegant Sufficiency."
               }
             ],
             "role": null
@@ -106,7 +107,7 @@
               {
                 "id": "adk-b1ff2a99-ee9b-46a7-ad93-5db7586e6947",
                 "args": {},
-                "name": "enchant_soulshard_dagger"
+                "name": "hone_refactoring_sickle"
               }
             ],
             "intermediate_responses": []
@@ -138,7 +139,7 @@
                 "executable_code": null,
                 "function_call": null,
                 "function_response": null,
-                "text": "The 'Scope Creep Hydra' is sprouting new heads with every commit! Its weakness is 'Inescapable Reality'. We need to get this under control!\n\n"
+                "text": "The 'Feature Creep Kraken' is sprouting new heads with every commit! Its weakness is 'Inescapable Reality'. We need to get this under control!\n\n"
               }
             ],
             "role": "user"
@@ -155,7 +156,7 @@
                 "executable_code": null,
                 "function_call": null,
                 "function_response": null,
-                "text": "Quickstart Crossbow deployed. Damage: 4 Initiative. Special Effect: Project Scaffolding. Target engaged."
+                "text": "Gauntlet of Metrics deployed against the Feature Creep Kraken. Damage: 4 Initiative. Special Effect: Scope Enforcement. Target engaged, bringing it back to Inescapable Reality."
               }
             ],
             "role": null
@@ -165,7 +166,7 @@
               {
                 "id": "adk-28b382c4-b3b6-449b-a730-d6474808a909",
                 "args": {},
-                "name": "fire_quickstart_crossbow"
+                "name": "wield_gauntlet_of_metrics"
               }
             ],
             "intermediate_responses": []

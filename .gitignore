@@ -39,3 +39,4 @@ dist/
 # Other
 *.swp
 *.swo
+gitea-data/

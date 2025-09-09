@@ -1,0 +1,1 @@
+## Mission Objective: Defeat the Seven Spectres

@@ -40,6 +40,93 @@ def enchant_soulshard_dagger() -> dict[str, Any]:
 
 
 
+
+
+
+@mcp.tool()
+def hone_refactoring_sickle() -> dict[str, Any]:
+    """Effective against 'Elegant Sufficiency' weaknesses like 'The Weaver of Spaghetti Code'."""
+    return {
+        "weapon_name": "Refactoring Sickle",
+        "damage_type": "Cleansing",
+        "base_damage": random.randint(100, 136),
+        "critical_hit_chance": round(random.uniform(0.10, 0.20), 2),
+        "special_effect": "Pruning - improves code health and maintainability with each strike.",
+    }
+
+
+@mcp.tool()
+def fire_quickstart_crossbow() -> dict[str, Any]:
+    """Effective against 'Confrontation with Inescapable Reality' weaknesses like 'Procrastination: The Timeless Slumber'."""
+    return {
+        "weapon_name": "Quickstart Crossbow",
+        "damage_type": "Initiative",
+        "base_damage": random.randint(105, 120),
+        "critical_hit_chance": round(random.uniform(0.9, 1.0), 2),
+        "special_effect": "Project Scaffolding - creates a `main.py`, `README.md`, and `requirements.txt`.",
+    }
+
+
+@mcp.tool()
+def strike_the_gilded_gavel() -> dict[str, Any]:
+    """Effective against 'Elegant Sufficiency' weaknesses like 'Perfectionism: The Gilded Cage'."""
+    return {
+        "weapon_name": "The Gilded Gavel",
+        "damage_type": "Finality",
+        "base_damage": 120,
+        "critical_hit_chance": 1.0,
+        "special_effect": "Seal of Shipping - marks a feature as complete and ready for deployment.",
+    }
+
+
+@mcp.tool()
+def wield_daggers_of_pair_programming() -> dict[str, Any]:
+    """Effective against 'Unbroken Collaboration' weaknesses like 'Apathy: The Spectre of "It Works on My Machine"'."""
+    return {
+        "weapon_name": "Daggers of Pair Programming",
+        "damage_type": "Collaborative",
+        "base_damage": random.randint(110, 125),
+        "critical_hit_chance": round(random.uniform(0.30, 0.50), 2),
+        "special_effect": "Synergy - automatically resolves merge conflicts and shares knowledge.",
+    }
+
+
+@mcp.tool()
+def craft_granite_maul() -> dict[str, Any]:
+    """Effective against 'Revolutionary Rewrite' weaknesses like 'Dogma: The Zealot of Stubborn Conventions'."""
+    return {
+        "weapon_name": "Granite Maul",
+        "damage_type": "Bludgeoning",
+        "base_damage": random.randint(115, 125),
+        "critical_hit_chance": round(random.uniform(0.05, 0.15), 2),
+        "special_effect": "Shatter - has a high chance to ignore the target's 'best practice' armor.",
+    }
+
+
+@mcp.tool()
+def focus_lens_of_clarity() -> dict[str, Any]:
+    """Effective against 'Elegant Sufficiency' weaknesses by revealing the truth behind 'Obfuscation'."""
+    return {
+        "weapon_name": "Lens of Clarity",
+        "damage_type": "Revelation",
+        "base_damage": random.randint(120, 130),
+        "critical_hit_chance": 1.0,
+        "special_effect": "Reveal Constants - highlights all magic numbers and suggests converting them to named constants.",
+    }
+
+
+@mcp.tool()
+def scribe_with_codex_of_openapi() -> dict[str, Any]:
+    """Effective against 'Confrontation with Inescapable Reality' weaknesses like 'Hype: The Prophet of Alpha Versions'."""
+    return {
+        "weapon_name": "Codex of OpenAPI",
+        "damage_type": "Documentation",
+        "base_damage": random.randint(110, 140),
+        "critical_hit_chance": round(random.uniform(0.5, 0.8), 2),
+        "special_effect": "Clarity - makes an API discoverable and usable by other agents and teams.",
+    }
+
+
 if __name__ == "__main__":
     print("Starting MCP server with STDIO transport...")
     # The run() method uses stdio by default

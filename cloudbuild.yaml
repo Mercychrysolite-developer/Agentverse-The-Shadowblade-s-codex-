@@ -1,0 +1,35 @@
+
+substitutions:
+  _PROJECT_ID: "$PROJECT_ID"
+  _REGION: "$REGION"
+  _REPO_NAME: "$REPO_NAME"
+  _IMAGE_TAG: "latest"
+
+steps:
+  - id: 'Run Pytest Ward'
+    name: 'python:3.12-slim'
+    entrypoint: 'bash'
+    args: 
+      - '-c'
+      - |
+        pip install -r shadowblade/requirements.txt && \
+        pytest test_agent_initiative.py
+    env:
+      - 'GOOGLE_CLOUD_PROJECT=$PROJECT_ID'
+      - 'GOOGLE_GENAI_USE_VERTEXAI=TRUE'
+      - 'GOOGLE_CLOUD_LOCATION=$_REGION'
+
+  - id: 'Forge Container'
+    name: 'gcr.io/cloud-builders/docker'
+    waitFor: ['Run Pytest Ward']
+    args:
+      - 'build'
+      - '-t'
+      - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/shadowblade-agent:${_IMAGE_TAG}'
+      - '-f'
+      - './shadowblade/Dockerfile'
+      - '.'
+
+images:
+  - '${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/shadowblade-agent:${_IMAGE_TAG}'
+
